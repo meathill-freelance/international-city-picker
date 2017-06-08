@@ -1,0 +1,27 @@
+{
+  "name": "international-city-picker",
+  "version": "0.1.0",
+  "description": "a international city picker component based on jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meathill-freelance/international-city-picker.git"
+  },
+  "keywords": [],
+  "author": "Meathill <meathill@gmail.com> (http://meathill.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meathill-freelance/international-city-picker/issues"
+  },
+  "homepage": "https://github.com/meathill-freelance/international-city-picker#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "webpack": "^2.6.1"
+  }
+}
