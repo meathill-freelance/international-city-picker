@@ -1,0 +1,380 @@
+[
+  {
+    "area": "东南亚",
+    "countries": [
+      {
+        "name": "泰国",
+        "cities": [
+          {
+            "id": "CN101010100",
+            "jp": "bj",
+            "py": "beijing",
+            "value": "北京",
+            "searchKey": "bj|beijing|北京",
+            "longterm": true
+          },
+          {
+            "id": "CN101020100",
+            "jp": "sh",
+            "py": "shanghai",
+            "value": "上海",
+            "searchKey": "sh|shanghai|上海",
+            "longterm": true
+          },
+          {
+            "id": "CN101280101",
+            "jp": "gz",
+            "py": "guangzhou",
+            "value": "广州",
+            "searchKey": "gz|guangzhou|广州",
+            "longterm": true
+          },
+          {
+            "id": "CN101280601",
+            "jp": "sz",
+            "py": "shenzhen",
+            "value": "深圳",
+            "searchKey": "sz|shenzhen|深圳",
+            "longterm": true
+          },
+          {
+            "id": "CN101070101",
+            "jp": "sy",
+            "py": "shenyang",
+            "value": "沈阳",
+            "searchKey": "sy|shenyang|沈阳",
+            "longterm": true
+          },
+          {
+            "id": "CN101250101",
+            "jp": "cs",
+            "py": "changsha",
+            "value": "长沙",
+            "searchKey": "cs|changsha|长沙",
+            "longterm": true
+          },
+          {
+            "id": "CN101190101",
+            "jp": "nj",
+            "py": "nanjing",
+            "value": "南京",
+            "searchKey": "nj|nanjing|南京",
+            "longterm": true
+          },
+          {
+            "id": "CN101310101",
+            "jp": "hk",
+            "py": "haikou",
+            "value": "海口",
+            "searchKey": "hk|haikou|海口",
+            "longterm": true
+          },
+          {
+            "id": "CN101300101",
+            "jp": "nn",
+            "py": "nanning",
+            "value": "南宁",
+            "searchKey": "nn|nanning|南宁",
+            "longterm": false
+          },
+          {
+            "id": "CN101110101",
+            "jp": "xa",
+            "py": "xian",
+            "value": "西安",
+            "searchKey": "xa|xian|西安",
+            "longterm": false
+          }
+        ]
+      },
+      {
+        "name": "马来西亚",
+        "cities": [
+          {
+            "id": "CN101240101",
+            "jp": "nc",
+            "py": "nanchang",
+            "value": "南昌",
+            "searchKey": "nc|nanchang|南昌",
+            "longterm": true
+          },
+          {
+            "id": "CN101230201",
+            "jp": "xm",
+            "py": "xiamen",
+            "value": "厦门",
+            "searchKey": "xm|xiamen|厦门",
+            "longterm": false
+          },
+          {
+            "id": "CN101060101",
+            "jp": "ch",
+            "py": "changchun",
+            "value": "长春",
+            "searchKey": "ch|changchun|长春",
+            "longterm": true
+          },
+          {
+            "id": "CN101210101",
+            "jp": "hz",
+            "py": "hangzhou",
+            "value": "杭州",
+            "searchKey": "hz|hangzhou|杭州",
+            "longterm": true
+          },
+          {
+            "id": "CN101200101",
+            "jp": "wh",
+            "py": "wuhan",
+            "value": "武汉",
+            "searchKey": "wh|wuhan|武汉",
+            "longterm": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "area": "台日韩",
+    "countries": [
+      {
+        "name": "台湾",
+        "cities": [
+          {
+            "id": "CN101120201",
+            "jp": "qd",
+            "py": "qingdao",
+            "value": "青岛",
+            "searchKey": "qd|qingdao|青岛",
+            "longterm": true
+          },
+          {
+            "id": "CN101090101",
+            "jp": "sjj",
+            "py": "shijiazhuang",
+            "value": "石家庄",
+            "searchKey": "sjj|shijiazhuang|石家庄",
+            "longterm": false
+          },
+          {
+            "id": "CN101050101",
+            "jp": "heb",
+            "py": "haerbin",
+            "value": "哈尔滨",
+            "searchKey": "heb|haerbin|哈尔滨",
+            "longterm": false
+          }
+        ]
+      },
+      {
+        "name": "日本",
+        "cities": [
+          {
+            "id": "CN101180901",
+            "jp": "lys",
+            "py": "luoyangshi",
+            "value": "洛阳市",
+            "searchKey": "lys|luoyangshi|洛阳市",
+            "longterm": false
+          },
+          {
+            "id": "CN101070201",
+            "jp": "dl",
+            "py": "dalian",
+            "value": "大连",
+            "searchKey": "dl|dalian|大连",
+            "longterm": true
+          },
+          {
+            "id": "CN101011300",
+            "jp": "my",
+            "py": "miyun",
+            "value": "密云",
+            "searchKey": "my|miyun|密云",
+            "longterm": true
+          },
+          {
+            "id": "CN101040100",
+            "jp": "cq",
+            "py": "chongqing",
+            "value": "重庆",
+            "searchKey": "cq|chongqing|重庆",
+            "longterm": true
+          },
+          {
+            "id": "CN101060401",
+            "jp": "sp",
+            "py": "siping",
+            "value": "四平",
+            "searchKey": "sp|siping|四平",
+            "longterm": true
+          },
+          {
+            "id": "CN101060502",
+            "jp": "mhk",
+            "py": "meihekou",
+            "value": "梅河口",
+            "searchKey": "mhk|meihekou|梅河口",
+            "longterm": true
+          },
+          {
+            "id": "CN101060601",
+            "jp": "bc",
+            "py": "baicheng",
+            "value": "白城",
+            "searchKey": "bc|baicheng|白城",
+            "longterm": true
+          }
+        ]
+      },
+      {
+        "name": "韩国",
+        "cities": [
+          {
+            "id": "CN101070301",
+            "jp": "as",
+            "py": "anshan",
+            "value": "鞍山",
+            "searchKey": "as|anshan|鞍山",
+            "longterm": true
+          },
+          {
+            "id": "CN101070401",
+            "jp": "fs",
+            "py": "fushun",
+            "value": "抚顺",
+            "searchKey": "fs|fushun|抚顺",
+            "longterm": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "area": "其他",
+    "countries": [
+      {
+        "name": "越南",
+        "cities": [
+          {
+            "id": "CN101070501",
+            "jp": "bx",
+            "py": "benxi",
+            "value": "本溪",
+            "searchKey": "bx|benxi|本溪",
+            "longterm": true
+          },
+          {
+            "id": "CN101070601",
+            "jp": "dd",
+            "py": "dandong",
+            "value": "丹东",
+            "searchKey": "dd|dandong|丹东",
+            "longterm": true
+          },
+          {
+            "id": "CN101070801",
+            "jp": "yk",
+            "py": "yingkou",
+            "value": "营口",
+            "searchKey": "yk|yingkou|营口",
+            "longterm": true
+          },
+          {
+            "id": "CN101080101",
+            "jp": "hhht",
+            "py": "huhehaote",
+            "value": "呼和浩特",
+            "searchKey": "hhht|huhehaote|呼和浩特",
+            "longterm": true
+          },
+          {
+            "id": "CN101080201",
+            "jp": "bt",
+            "py": "baotou",
+            "value": "包头",
+            "searchKey": "bt|baotou|包头",
+            "longterm": true
+          }
+        ]
+      },
+      {
+        "name": "印度",
+        "cities": [
+          {
+            "id": "CN101080501",
+            "jp": "tl",
+            "py": "tongliao",
+            "value": "通辽",
+            "searchKey": "tl|tongliao|通辽",
+            "longterm": true
+          },
+          {
+            "id": "CN101080601",
+            "jp": "cf",
+            "py": "chifeng",
+            "value": "赤峰",
+            "searchKey": "cf|chifeng|赤峰",
+            "longterm": true
+          },
+          {
+            "id": "CN101081001",
+            "jp": "hle",
+            "py": "hailaer",
+            "value": "海拉尔",
+            "searchKey": "hle|hailaer|海拉尔",
+            "longterm": true
+          },
+          {
+            "id": "CN101081010",
+            "jp": "mzl",
+            "py": "manzhouli",
+            "value": "满洲里",
+            "searchKey": "mzl|manzhouli|满洲里",
+            "longterm": true
+          },
+          {
+            "id": "CN101081101",
+            "jp": "wlht",
+            "py": "wulanhaote",
+            "value": "乌兰浩特",
+            "searchKey": "wlht|wulanhaote|乌兰浩特",
+            "longterm": true
+          },
+          {
+            "id": "CN101120101",
+            "jp": "jn",
+            "py": "jinan",
+            "value": "济南",
+            "searchKey": "jn|jinan|济南",
+            "longterm": true
+          },
+          {
+            "id": "CN101120301",
+            "jp": "zb",
+            "py": "zibo",
+            "value": "淄博",
+            "searchKey": "zb|zibo|淄博",
+            "longterm": true
+          },
+          {
+            "id": "CN101120401",
+            "jp": "dz",
+            "py": "dezhou",
+            "value": "德州",
+            "searchKey": "dz|dezhou|德州",
+            "longterm": true
+          },
+          {
+            "id": "CN101120501",
+            "jp": "yt",
+            "py": "yantai",
+            "value": "烟台",
+            "searchKey": "yt|yantai|烟台",
+            "longterm": true
+          }
+        ]
+      }
+    ]
+  }
+]

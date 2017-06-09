@@ -4,7 +4,9 @@
   "description": "a international city picker component based on jquery",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack",
+    "stylus": "mkdir css & stylus -m -w styl/city-picker.styl -o css/"
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,9 @@
     "babel-preset-env": "^1.5.1",
     "bootstrap": "^4.0.0-alpha.6",
     "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "mustache": "^2.3.0"
   }
 }
