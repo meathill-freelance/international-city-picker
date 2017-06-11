@@ -1,12 +1,22 @@
 @import "core/_variable.styl"
 
 .tqb-city-picker-desktop
+  background-color white
   position absolute
   display flex
   flex-wrap wrap
   width 880px
-  height 500px
   border 1px solid $border-color
+
+  &.out
+    display none
+
+  &.loading
+    flex-direction column
+
+    div
+      padding 2rem 0
+      text-align center
 
   @import "parts/_body.styl"
 

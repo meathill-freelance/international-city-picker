@@ -25,6 +25,7 @@ export default class CityPicker extends Base {
     // 选择器
     this.$el = $(tpl.framework);
     container.appendChild(this.$el[0]);
+    this.$el.removeClass('out');
 
     fetch(options.url || './assets/city.json')
       .then(response => {
@@ -42,7 +43,8 @@ export default class CityPicker extends Base {
         count += json.length;
         let nav = mustache.render(tpl.nav, { all: json });
         let sheets = json.map( cities  => CityPicker.createSheet(cities));
-        this.$el.html(nav + sheets.join(''));
+        this.$el.removeClass('loading')
+          .html(nav + sheets.join(''));
       });
   }
 
@@ -51,13 +53,15 @@ export default class CityPicker extends Base {
   }
 
   delegateEvents(options) {
-    this.$el.find('.active').removeClass('active');
-    this.$el.on('click', '.city', event => {
-      let target = event.currentTarget;
-      this.target.val(target.textContent);
-      this.realTarget.val(target.href.substr(2));
-      target.className = 'active';
-    });
+    this.$el
+      .on('click', '.city', event => {
+        this.$el.find('.active').removeClass('active');
+        let target = event.currentTarget;
+        this.target.val(target.textContent);
+        this.realTarget.val(target.getAttribute('href').substr(2));
+        target.className = 'active';
+        this.hide();
+      });
     event.preventDefault();
   }
 
