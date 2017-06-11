@@ -11,11 +11,17 @@ export default class CityPicker extends Base {
 
   createElement(options) {
     // 生成一个隐藏 input 用来存放城市 id
-    let input = document.createElement('input');
-    input.type = 'hidden';
-    input.name = this.target[0].name;
-    this.target.attr('name', input.name + '-label');
-    this.realTarget = $(input).insertAfter(this.target);
+    let input = $(`[type=hidden][name=${this.target[0].id}]`);
+    if (input.length) {
+      this.realTarget = input;
+      this.name = this.realTarget[0].name;
+    } else {
+      input = document.createElement('input');
+      input.type = 'hidden';
+      this.name = input.name = this.target[0].name;
+      this.target.attr('name', input.name + '-label');
+      this.realTarget = $(input).insertAfter(this.target);
+    }
 
     // 插入页面的容器，用来定位
     let container = this.container = document.createElement('div');
@@ -38,6 +44,7 @@ export default class CityPicker extends Base {
         this.data = options.data = json.map( (cities, index) => {
           cities.selected = index === 0;
           cities.index = count + index;
+          cities.name = this.name;
           return cities;
         });
         count += json.length;
@@ -45,6 +52,9 @@ export default class CityPicker extends Base {
         let sheets = json.map( cities  => CityPicker.createSheet(cities));
         this.$el.removeClass('loading')
           .html(nav + sheets.join(''));
+      })
+      .then(() => {
+        this.setValue();
       });
   }
 

@@ -12,7 +12,7 @@ export const framework = `
 
 export const nav = `
 {{#all}}
-<input type="radio" name="${name}-sheet" id="${name}-nav-{{index}}" class="${name}-nav-{{index}}" value="{{index}}" {{#selected}}checked{{/selected}}>
+<input type="radio" name="${name}-{{name}}" id="${name}-nav-{{index}}" class="${name}-nav-{{index}}" value="{{index}}" {{#selected}}checked{{/selected}}>
 <label for="${name}-nav-{{index}}">{{area}}</label>
 {{/all}}
 `;
