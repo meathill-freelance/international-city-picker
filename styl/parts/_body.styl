@@ -1,0 +1,50 @@
+input[type=radio]
+  display none
+
+  &:checked + label
+    background-color white
+    color $nav-bg-color
+
+for n in 0..10
+  .tqb-city-picker-desktop-nav-{n}:checked ~ .tqb-city-picker-desktop-sheet-{n}
+    display flex
+
+label
+  display block
+  flex 1
+  background-color $nav-bg-color
+  color white
+  font-size 20px
+  line-height 70px
+  text-align center
+  cursor pointer
+
+dl
+  width 100%
+  display none
+  padding 5px 0
+  flex-wrap wrap
+
+dt
+  width 20%
+  font-size 22px
+  border-right 1px solid $border-color
+  text-align center
+
+dd
+  flex 1 1 80%
+  font-size 18px
+  display flex
+  flex-wrap wrap
+  line-height 48px
+
+  a
+    color $color
+    display block
+    text-align center
+    flex 0 1 16.66666%
+    height 48px
+
+    &:hover
+      color $nav-bg-color
+      text-decoration none

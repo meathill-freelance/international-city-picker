@@ -2,6 +2,8 @@ import mustache from 'mustache';
 import Base from '../meathill-component-core/app/base';
 import * as tpl from './template';
 
+let count = 0;
+
 export default class CityPicker extends Base {
   constructor(target, options) {
     super(target, options);
@@ -22,7 +24,7 @@ export default class CityPicker extends Base {
 
     // 选择器
     this.$el = $(tpl.framework);
-    container.html(this.$el);
+    container.appendChild(this.$el[0]);
 
     fetch(options.url || './assets/city.json')
       .then(response => {
@@ -32,14 +34,20 @@ export default class CityPicker extends Base {
         throw new Error(response.statusText);
       })
       .then(json => {
-        this.data = options.data = json;
-        let sheets = json.map( cities => CityPicker.createSheet(cities));
-        this.$el.html(sheets.join(''));
+        this.data = options.data = json.map( (cities, index) => {
+          cities.selected = index === 0;
+          cities.index = count + index;
+          return cities;
+        });
+        count += json.length;
+        let nav = mustache.render(tpl.nav, { all: json });
+        let sheets = json.map( cities  => CityPicker.createSheet(cities));
+        this.$el.html(nav + sheets.join(''));
       });
   }
 
   static createSheet(cities) {
-    return mustache.render(cities, tpl.sheet);
+    return mustache.render(tpl.sheet, cities);
   }
 
   delegateEvents(options) {
@@ -48,13 +56,16 @@ export default class CityPicker extends Base {
       let target = event.currentTarget;
       this.target.val(target.textContent);
       this.realTarget.val(target.href.substr(2));
-      target.addClass('active');
+      target.className = 'active';
     });
     event.preventDefault();
   }
 
   setValue() {
     let value = this.realTarget.val();
-    this.$el.find(`[href=#/${value}]`).addClass('active');
+    if (!value) {
+      return;
+    }
+    this.$el.find(`[href='#/${value}']`).addClass('active');
   }
 }

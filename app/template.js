@@ -10,10 +10,15 @@ export const framework = `
 </div>
 `;
 
+export const nav = `
+{{#all}}
+<input type="radio" name="${name}-sheet" id="${name}-nav-{{index}}" class="${name}-nav-{{index}}" value="{{index}}" {{#selected}}checked{{/selected}}>
+<label for="${name}-nav-{{index}}">{{area}}</label>
+{{/all}}
+`;
+
 export const sheet = `
-<input type="radio" name="${name}-sheet" id="${name}-sheet-{{index}}" value="{{index}}">
-<label for="${name}-sheet-{{index}}">{{label}}</label>
-<dl>
+<dl class="${name}-sheet-{{index}}">
   {{#countries}}
   <dt>{{name}}</dt>
   <dd>
