@@ -1,5 +1,5 @@
 {
-  "name": "international-city-picker",
+  "name": "tqb-city-picker-desktop",
   "version": "0.1.0",
   "description": "a international city picker component based on jquery",
   "main": "index.js",
@@ -30,9 +30,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-webpack": "^1.5.0",
+    "jsesc": "^2.5.1",
     "run-sequence": "^1.2.2",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "webpack-stream": "^3.2.0"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",

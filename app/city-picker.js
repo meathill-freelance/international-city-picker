@@ -33,13 +33,10 @@ export default class CityPicker extends Base {
     container.appendChild(this.$el[0]);
     this.$el.removeClass('out');
 
-    fetch(options.url || './assets/city.json')
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error(response.statusText);
-      })
+    $.get({
+      url: options.url || './assets/city.json',
+      dataType: 'json'
+    })
       .then(json => {
         this.data = options.data = json.map( (cities, index) => {
           cities.selected = index === 0;
