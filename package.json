@@ -20,23 +20,10 @@
   },
   "homepage": "https://github.com/meathill-freelance/international-city-picker#readme",
   "devDependencies": {
-    "babel-core": "^6.25.0",
-    "babel-loader": "^7.0.0",
-    "babel-preset-env": "^1.5.2",
-    "bootstrap": "^4.0.0-alpha.6",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.4.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-stylus": "^2.6.0",
-    "gulp-uglify": "^3.0.0",
-    "jsesc": "^2.5.1",
-    "run-sequence": "^1.2.2",
-    "webpack": "^2.6.1",
-    "webpack-stream": "^3.2.0"
-  },
-  "dependencies": {
-    "font-awesome": "^4.7.0",
-    "mustache": "^2.3.0"
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.2.1",
+    "bootstrap": "^4.5.3",
+    "webpack": "^5.5.1"
   }
 }
